@@ -36,3 +36,16 @@
 3. Django é gratuito e Open Source.
 4. Django é framework mais popular no mercado
 5. [Documentação Django](https://docs.djangoproject.com/en/3.2/)
+
+## Diretório de um projeto Django
+
+_IMAGEM_
+
+### settings.py
+### urls.py
+### wsgi.py
+### manage.py
+### models.py
+### tests.py
+### views.py
+
