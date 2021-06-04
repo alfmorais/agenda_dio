@@ -42,10 +42,23 @@
 _IMAGEM_
 
 ### settings.py
+<p>Definições e Configurações para seu projeto Django.</p>
+
 ### urls.py
+<p>Todas as URLS declarada para seu projeto Django.</p>
+
 ### wsgi.py
+<p>Um ponto de entrada para servidores da web compatíveis com WSGI para atender ao seu projeto</p>
+
 ### manage.py
+<p>Um utilitário de linha de comando que permite interagir com este projeto Django de várias maneiras.</p>
+
 ### models.py
+<p>O arquivo models.py é um utilitário para definição de Banco de Dados. Atráves de classes escritas em python é possivel criar complexos banco de dados.</p>
+
 ### tests.py
+<p>Um local convencional para os testes de um aplicativo é no arquivo tests.py do aplicativo; o sistema de teste encontrará automaticamente os testes em qualquer arquivo cujo nome comece com teste.</p>
+
 ### views.py
+<p>O arquivo views.py é o local onde coloca os path de acesso a nossa aplicação.</p>
 
