@@ -15,9 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from meu_app.views import hello
+from meuapp import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', hello),
+    # teste do hello
+    path('hello/', views.hello),
+
+    # teste da calculadora
+    path('soma/<int:n1>/<int:n2>', views.soma),
+    path('mult/<int:n1>/<int:n2>', views.mult),
+    path('divi/<int:n1>/<int:n2>', views.divi),
+    path('sub/<int:n1>/<int:n2>', views.sub),
 ]
