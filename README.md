@@ -62,3 +62,8 @@ _IMAGEM_
 ### views.py
 <p>O arquivo views.py é o local onde coloca os path de acesso a nossa aplicação.</p>
 
+## Criando ambiente virtual
+1. python -m venv dev_web_django
+2. dev_web_django/Scripts/Activate
+
+## Instalando o Django
