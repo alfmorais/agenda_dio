@@ -41,29 +41,57 @@
 
 _IMAGEM_
 
+### admin.py
+* Interface administrativa gerada automaticamente pelo Django
+* Ele lê os metadados que estão nos models e fornece uma interface poderosa e pronta para manipulação de dados.
+
 ### settings.py
-<p>Definições e Configurações para seu projeto Django.</p>
+* É responsável pelas configurações do Django
+* Nele é possivél configurar por exemplo apps, conexão com o banco de dados, templates, time zone, cache, segurança, arquivos estáticos, etc.
 
 ### urls.py
-<p>Todas as URLS declarada para seu projeto Django.</p>
+* É um SCHEMA de URL
+* Responsável por gerenciar as rotas de URL, onde é possivel configurar pra onde cada rota será executada.
+* É uma forma limpa e elegante de gerenciar URLs.
 
 ### wsgi.py
-<p>Um ponto de entrada para servidores da web compatíveis com WSGI para atender ao seu projeto</p>
+* Web Server Gateway Interface - Interface de porta de entrada do servidor web
+* Plataforma padrão para aplicações web em Python 
+* Serve de interface do servidor web e a aplicações web
+* O Django com o comando _startproject_ inicia uma configuração WSGI padrão para que se possa executar sua aplicação web. 
+* Quando inicia a aplicação Django com o comando runserver é iniciado um servidor de aplicação web leve. Esse servidor é especializada pela configuração WSGI_APPLICATION 
 
 ### manage.py
-<p>Um utilitário de linha de comando que permite interagir com este projeto Django de várias maneiras.</p>
+* É um wrapper em volta do django-admin.py
+* Ele delega tarefas para o django-admin.py
+* Responsável por colocar o pacote do projeto no sys.path
+* Ele define a váriavel de ambiente DJANGO_SETTINGS_MODULE que então aponta para o arquivo settings.py
+* Por isso, o manage.py é gerado automaticamente junto ao projeto, para facilitar o uso de comandos do django-admin.py (comandos administativos)
+
+_lista de comandos_
 
 ### models.py
-<p>O arquivo models.py é um utilitário para definição de Banco de Dados. Atráves de classes escritas em python é possivel criar complexos banco de dados.</p>
+* Define o modelo de dados inteiramente em Python
+* Faz a abstração dos objetos de banco de dados para o Python, transformando todas as tabelas em classes e os acessos são feito utilizando linguagem Python, onde o Django realiza a transformação para SQL.
 
 ### tests.py
 <p>Um local convencional para os testes de um aplicativo é no arquivo tests.py do aplicativo; o sistema de teste encontrará automaticamente os testes em qualquer arquivo cujo nome comece com teste.</p>
 
 ### views.py
-<p>O arquivo views.py é o local onde coloca os path de acesso a nossa aplicação.</p>
+* Responsável por processar e retornar uma resposta para o cliente que fez a requisição. 
+
+### STATIC
+* Responsável por armazenar os arquivos estáticos
+* CSS, JavaScript, Imagens
+
+### TEMPLATES
+* Responsável por armazenar os arquivos HTML
+* O Diretório templates é diretório padrão para armazenamos todo o conteúdo HTML da nossa aplicação.
 
 ## Criando ambiente virtual
 1. python -m venv dev_web_django
 2. dev_web_django/Scripts/Activate
 
 ## Instalando o Django
+1. pip intall django
+_imagem_
