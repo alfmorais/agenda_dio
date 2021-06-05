@@ -1,4 +1,4 @@
-"""meu_projeto URL Configuration
+"""agenda URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -15,17 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from meuapp import views
-
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # teste do hello
-    path('hello/', views.hello),
-
-    # teste da calculadora
-    path('soma/<int:n1>/<int:n2>', views.soma),
-    path('mult/<int:n1>/<int:n2>', views.mult),
-    path('divi/<int:n1>/<int:n2>', views.divi),
-    path('sub/<int:n1>/<int:n2>', views.sub),
 ]
