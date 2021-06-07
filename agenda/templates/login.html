@@ -1,0 +1,29 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+	<head>
+		<title>Agenda</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Alfredo de Morais">
+		<meta name="description" content="">
+		<meta name="keywords" content="html5, tecnologia">
+	</head>
+	<body>
+        <form action="submit" method="POST">{% csrf_token %}
+            <div align="center">
+                <h1>Login</h1>
+                <label>Usuário:</label>
+                <input type="text" name="username">
+                <label>Password:</label>
+                <input type="password" name="password">
+                <button type="submit">Entrar</button>
+            </div>
+        </form>
+
+        {% for message in messages %}
+            <div align="center">
+                <strong>ERRO </strong>{{ message }}
+            </div>
+        {% endfor %}
+	</body>
+</html>
