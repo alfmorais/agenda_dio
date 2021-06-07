@@ -20,6 +20,7 @@ from core import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index),
     # lista de urls criada para aplicação
     # path('eventos/<titulo_evento>', views.eventos),
     path('agenda/', views.lista_eventos)
