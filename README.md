@@ -95,3 +95,5 @@ _lista de comandos_
 ## Instalando o Django
 1. pip intall django
 _imagem_
+
+## Alfredo de Morais | Desenvolvedor de Aplicações Python
